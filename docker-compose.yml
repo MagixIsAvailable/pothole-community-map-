@@ -1,0 +1,25 @@
+# Docker Compose — Pothole Community Map (local dev)
+version: "3.9"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./storage:/app/storage
+      - ./data:/app/data
+    env_file:
+      - .env
+    command: uvicorn api.app.main:app --host 0.0.0.0 --port 8000
+
+  web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile.web
+    ports:
+      - "5173:5173"
+    depends_on:
+      - api

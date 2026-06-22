@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ML artifacts
+ml/runs/
+ml/models/weights/
+ml/models/checkpoints/
+data/raw/
+data/interim/
+data/processed/
+data/exports/
+storage/
+
+# Node
+web/node_modules/
+web/dist/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

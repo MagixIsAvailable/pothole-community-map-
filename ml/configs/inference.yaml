@@ -1,0 +1,8 @@
+# Inference config for pothole detection
+weights: ml/runs/train/pothole_v1/weights/best.pt
+conf: 0.35
+iou: 0.45
+imgsz: 640
+device: cpu
+save: true
+save_txt: true

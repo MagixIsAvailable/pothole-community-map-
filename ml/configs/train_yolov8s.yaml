@@ -1,0 +1,15 @@
+# YOLOv8s training config for pothole detection (higher accuracy)
+model: yolov8s.pt
+data: data/processed/potholes_yolo/data.yaml
+epochs: 100
+imgsz: 640
+batch: 8
+device: cpu
+workers: 2
+lr0: 0.01
+lrf: 0.01
+momentum: 0.937
+weight_decay: 0.0005
+warmup_epochs: 3
+warmup_momentum: 0.8
+augment: true
