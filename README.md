@@ -33,6 +33,23 @@ bash scripts/bootstrap.sh
 ```
 
 ### Start the app (two terminals)
+
+**Windows (PowerShell):**
+```powershell
+# Terminal 1 — API backend
+pip install fastapi uvicorn sqlalchemy pydantic pydantic-settings python-multipart aiofiles httpx
+$env:PYTHONPATH="."
+uvicorn api.app.main:app --reload --host 127.0.0.1 --port 8000
+# → http://127.0.0.1:8000/docs
+
+# Terminal 2 — Web frontend
+cd web
+npm install
+npm run dev
+# → http://localhost:5173
+```
+
+**macOS / Linux:**
 ```bash
 # Terminal 1 — API backend
 bash scripts/run_api.sh

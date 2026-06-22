@@ -29,5 +29,5 @@ async def test_upload_without_latlng_uses_defaults():
         resp = await client.post("/api/v1/uploads", files=files)
     assert resp.status_code == 200
     body = resp.json()
-    assert body["lat"] == 51.5074
-    assert body["lng"] == -0.1278
+    assert body["lat"] == 57.15
+    assert body["lng"] == -2.11

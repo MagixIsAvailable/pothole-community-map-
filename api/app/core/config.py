@@ -32,9 +32,9 @@ class Settings(BaseSettings):
     YOLO_CONFIDENCE_THRESHOLD: float = 0.35
     YOLO_IMAGE_SIZE: int = 640
 
-    # Geo-tagging
-    DEFAULT_LAT: float = 51.5074
-    DEFAULT_LNG: float = -0.1278
+    # Geo-tagging (Aberdeenshire)
+    DEFAULT_LAT: float = 57.15
+    DEFAULT_LNG: float = -2.11
     CLUSTER_EPS_METERS: float = 15.0
     CLUSTER_MIN_SAMPLES: int = 2
 

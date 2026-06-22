@@ -15,7 +15,7 @@ def _sample_geojson() -> dict[str, Any]:
         "features": [
             {
                 "type": "Feature",
-                "geometry": {"type": "Point", "coordinates": [-0.1278, 51.5074]},
+                "geometry": {"type": "Point", "coordinates": [-2.11, 57.15]},
                 "properties": {
                     "id": str(uuid.uuid4()),
                     "status": "confirmed",
@@ -27,7 +27,7 @@ def _sample_geojson() -> dict[str, Any]:
             },
             {
                 "type": "Feature",
-                "geometry": {"type": "Point", "coordinates": [-0.1250, 51.5085]},
+                "geometry": {"type": "Point", "coordinates": [-2.09, 57.16]},
                 "properties": {
                     "id": str(uuid.uuid4()),
                     "status": "under_review",
@@ -39,7 +39,7 @@ def _sample_geojson() -> dict[str, Any]:
             },
             {
                 "type": "Feature",
-                "geometry": {"type": "Point", "coordinates": [-0.1310, 51.5060]},
+                "geometry": {"type": "Point", "coordinates": [-2.13, 57.14]},
                 "properties": {
                     "id": str(uuid.uuid4()),
                     "status": "detected",
@@ -51,7 +51,7 @@ def _sample_geojson() -> dict[str, Any]:
             },
             {
                 "type": "Feature",
-                "geometry": {"type": "Point", "coordinates": [-0.1295, 51.5090]},
+                "geometry": {"type": "Point", "coordinates": [-2.10, 57.17]},
                 "properties": {
                     "id": str(uuid.uuid4()),
                     "status": "repaired",
